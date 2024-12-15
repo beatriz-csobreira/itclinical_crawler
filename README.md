@@ -13,6 +13,11 @@
     scrapy --version
 ```
 - Read scrapy tutorial (https://docs.scrapy.org/en/latest/intro/tutorial.html) and create first spider for ITClinical webpage (https://itclinical.com/it.php)
+```sh
+    scrapy startproject itclinical_crawler
+    cd itclinical_crawler
+    scrapy genspider itclinical https://itclinical.com/it.php
+```
 - Go through the URLs of the "Our Software" section
 - Extract the "Features" bulletpoints of each subsection of "Our Software"
 - Optionally: write extracted information to a .csv
