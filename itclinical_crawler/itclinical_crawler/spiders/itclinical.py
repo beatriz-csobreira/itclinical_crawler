@@ -23,6 +23,7 @@ class ItclinicalSpider(scrapy.Spider):
         # only print on the last response, the bullet points in order of 'start_urls'
         if self.response_count == len(self.start_urls):
             for url in self.start_urls:
-                print(url)
+                print(f"\n{url}\n")
                 for point in self.url_to_data[url]:
-                    print(point)
+                    print(f"\t{point}")
+            print()
