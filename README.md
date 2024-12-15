@@ -1,5 +1,20 @@
 # README
 
+## How To Use
+
+### Prerequisites
+
+- Python 3 installed
+- Scrapy installed (via conda or pip)
+
+### Run
+
+```sh
+git clone git@github.com:beatriz-csobreira/itclinical_crawler.git
+cd itclinical_crawler/itclinical_crawler/
+scrapy crawl itclinical --nolog
+```
+
 ## TODO
 
 - Create a virtual environment ("itclinical_crawler")
